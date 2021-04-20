@@ -1,0 +1,376 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6, figure{
+    margin: 0;
+}
+h1,h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    margin: 0;
+    
+}
+.second-font{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 13.5px;
+}
+#img-caption{
+    font-size: 12px;
+    margin: 5px 0px;
+}
+#main{
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*Main section*/
+#main-bg{
+    width: 100%;
+    height: 721px;
+    background-image: url(./img/Creación_de_Adámxl.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#overlay{
+    position: absolute;
+    max-width: 1920px;
+    width: 100%;
+    height: 721px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 100%);
+}
+#menu{
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 200%;
+    margin: 5%;
+    position: absolute;
+    color: #ffff;
+    z-index: 1000;
+}
+#menu a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+#menu a:hover{
+    color: #EFBA00;
+    text-decoration: underline;
+    
+}
+#title{
+    position: absolute;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 1000;
+}
+#title h1{
+    line-height: 90%;
+}
+.title-small{
+    display: none;
+}
+#title p{
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #EFBA00;
+    font-weight: 400;
+    margin: 0;
+}
+#title .years{
+    position: relative;
+    top: 195px;
+    font-family: 'Cormorant Garamond', serif;
+}
+/*Section one*/
+#tribute-info{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 950px;
+    width: 100%;
+    top: -70px;
+    position: relative;
+}
+#box-one{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+#img-div{
+    max-width: 40%;
+    height: auto;
+}
+#image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+#text-life{
+    width: 60%;
+    padding: 20px;
+
+    margin-left: 3%;
+    text-align: left;
+}
+.big-text{
+    width: 140px;
+    font-size: 2.5rem;
+    padding: 15px 10px;
+    background-color: #EDEDEB;
+    text-transform: uppercase;
+}
+/*Section two*/
+#box-two{
+    background-color: #fff;
+    display: grid;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#personal-life h2{
+    color: #000;
+    text-align: left;
+    margin: 30px 0px 0px;
+    font-size: 2rem;
+}
+#text-line{
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #D9AA07;
+    margin-bottom: 30px;
+}
+#btwo-content{
+    display: grid;
+    grid-template-areas: 'textone texttwo'
+    'textthree texttwo';
+    width: 100%;
+}
+#two-t-one{
+    grid-area: textone;
+    margin: 0% 5% 0% 0%;
+    text-align: left;
+}
+#two-image{
+    grid-area: texttwo;
+    margin: 5%;
+}
+#two-t-three{
+    text-align: left;
+    grid-area: textthree;
+    margin: 0% 5% 0% 0%;
+}
+.upper-text{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 30px 0px;
+}
+/*Section three*/
+#box-three{
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#works{
+    width: 100%;
+}
+#works h2{
+    color: #000;
+    text-align: left;
+    margin: 30px 0px 0px;
+    font-size: 2rem;
+}
+#three-t-one{
+    display: flex;
+}
+#three-t-two{
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+}
+#t-one{
+    width: 40%;
+    text-align: left;
+}
+#t-two{
+    width: 60%;
+    text-align: left;
+    margin: 30px 0px;
+}
+#chapel-img{
+    width: 100%;
+    height: auto;
+}
+#img-v{
+    display: none;
+}
+#chapel-img img{
+    width: 100%;
+}
+#t-one-two{
+    width: 100%;
+    text-align: left;
+}
+#t-two-two{
+    width: 100%;
+    text-align: left;
+    margin: 30px 0px;
+}
+#block-line{
+    display: block;
+    width: 100%;
+    height: 0.3px;
+    background-color: #292929;
+}
+.no-deco{
+    color: #000;
+}
+#arr-icon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0px 10px;
+    background-image: url(./img/Vector.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+/*MEDIA SCREEN*/
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+    #main-bg{
+        background-image: url(./img/Creación_de_Adámxl.jpg);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    #main{
+        max-width: 992px;
+    }
+    #main-bg{
+        background-image: url(./img/Creación_de_Adámxl.jpg);
+    }
+    #tribute-info{
+        max-width: 850px;
+        width: 90%;
+    }
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    #main-bg{
+        background-image: url(./img/Creación_de_Adámxl.jpg);
+    }
+    #title{
+        font-size: 2rem;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    #tribute-info {
+        max-width: 480px;
+        width: 80%;
+    }
+    #box-one {
+        flex-direction: column;
+    }
+    #img-div{
+        padding: 20px;
+        max-width: 100%;
+    }
+    #text-life{   
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    #title{
+        font-size: 2rem;
+    }
+    #btwo-content{
+        display: grid;
+        grid-template-areas: 'textone'
+        'texttwo' 'textthree' ;
+    }
+    #two-t-one, #two-t-three {
+        margin: 0;
+    }
+  }
+
+/* Small devices (phones, 500px and up) */
+@media only screen and (max-width: 500px) {
+    #title{
+        font-size: 1.5rem;
+    }
+    #three-t-one{
+        flex-direction: column;
+    }
+    #t-one{
+        width: 100%;
+    }
+    #t-two{
+        width: 100%;
+    }
+    #img-h{
+        display: none;
+    }
+    #img-v{
+        display: block;
+    }
+    #box-four{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* Small devices (phones, 425px and up) */
+@media only screen and (max-width: 425px) {
+    #title{
+        font-size: 1.3rem;
+    }
+    #three-t-one{
+        flex-direction: column;
+    }
+    #img-div{
+        padding: 10px;
+    }
+    .title-large{
+        display: none;
+    }
+    .title-small{
+        display: block;
+        font-size: 4.5rem;
+    }
+  
+}
+
+/* Small devices (phones, 360px and up) */
+@media only screen and (max-width: 360px) {
+    #img-div{
+        padding: 10px;
+    }
+    .title-large{
+        display: none;
+    }
+    .title-small{
+        display: block;
+        font-size: 4.5rem;
+    }
+  }
+
