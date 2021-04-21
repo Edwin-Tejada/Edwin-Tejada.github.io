@@ -261,6 +261,9 @@ ul li{
     padding-bottom: 25px;
 
 }
+.section-two-container .st-imagebox-container .hesh-image-front{
+    height: 90%;
+}
 .section-two-container .st-textbox-container{
     display: flex;
     width: 50%;
@@ -527,6 +530,9 @@ input[type="submit"]:hover{
     .section-one-container .so-textbox-container .description-text{
         width: 80%;
     }
+    .section-two-container .st-imagebox-container .hesh-image-front{
+        height: 80%;
+    }
     .section-three-container .sth-textbox-container{
         width: 70%;
     }
@@ -688,8 +694,8 @@ input[type="submit"]:hover{
         width: 60%;
         min-width: 50%;
     }
-    .section-two-container .st-imagebox-container{
-        height: 45vh;
+    .section-two-container .st-imagebox-container .hesh-image-front{
+        height: 75%;
     }
 }
 /* Small devices (phones, tablets 768px and up) */
@@ -735,7 +741,10 @@ input[type="submit"]:hover{
     }
     .section-two-container .st-imagebox-container{
         width: 100%;
-        height: 40vh;
+        height: 320px;
+    }
+    .section-two-container .st-imagebox-container .hesh-image-front{
+        height: 100%;
     }
     .section-two-container .st-textbox-container{
         width: 100%;
@@ -777,7 +786,10 @@ input[type="submit"]:hover{
         height: 80px;
     }
     .section-two-container .st-imagebox-container{
-        height: 40vh;
+        height: 290px;
+    }
+    .section-two-container .st-imagebox-container .hesh-image-front{
+        height: 100%;
     }
     .section-five-container{
         flex-direction: column;
@@ -862,7 +874,7 @@ input[type="submit"]:hover{
         height: 70px;
     }
     .section-two-container .st-imagebox-container{
-        height: 200px;
+        height: 250px;
     }
     .section-three-container .sth-textbox-container .green-skull{
         width: 13%;
@@ -924,7 +936,7 @@ input[type="submit"]:hover{
         margin-top: 63%;
     }
     .section-two-container .st-imagebox-container{
-        height: 170px;
+        height: 210px;
     }
     .section-five-container .sf-textbox-container .sf-text-description .sf-text{
         width: 100%;
@@ -955,7 +967,10 @@ input[type="submit"]:hover{
         font-size: 0.8rem;
     }
     .section-two-container .st-imagebox-container{
-        height: 25vh;
+        height: 200px;
+    }
+    .section-two-container .st-textbox-container .st-text-description{
+        font-size: 0.8rem;
     }
 
 }
