@@ -1,0 +1,962 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+  }
+html{
+    scroll-behavior: smooth;
+    height: -webkit-fill-available;
+}
+a{
+    text-decoration: none;
+}
+/*Styles*/
+/*Nav Bar*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    z-index: 1000;
+}
+#nav-container{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20vh;
+    width: 100%;
+    height: 40px;
+}
+a .logo-header-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo-header-one{
+    width: 85%;
+    cursor: pointer;
+}
+/*Toggle*/
+#toggle{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+#toggle .bar{
+    display:flex;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px auto;
+    transition: all 0.3s ease-in-out;
+}
+#toggle.active .bar:nth-child(2){
+    opacity: 0;
+}
+#toggle.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+#toggle.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+/*End Toggle*/
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mobile-img{
+    width: 27px;
+    height: auto;
+    margin: 0px 20px;
+    display: none;
+}
+#nav-items{
+    display: flex;
+    width: 100%;
+    margin: 0px 40px 0px 0px;
+}
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    margin: 15px 20px;
+    font-size: 0.8rem;
+}
+#text-line{
+    display: none;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+ul li{
+    list-style-type: none;
+}
+#social-icon{
+    display: flex;
+    align-items: center;
+}
+.follow-text{
+    display: none;
+}
+.s-icons{
+    display: flex;
+    flex-direction: row;
+}
+.social-links{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 20px;
+}
+
+/*////section one////*/
+#main-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.section-one-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-height: 1200px;
+    padding: 0 20vh;
+    background-color: #1D1D1D;
+}
+.section-one-container .so-textbox-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+.section-one-container .so-textbox-container .so-text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 85%;
+}
+.section-one-container .so-textbox-container .main-text{
+    color: #fff;
+    font-size: 4rem;
+    margin: 80px 0px 20px 0px;
+}
+.section-one-container .so-textbox-container .description-text{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.section-one-container .so-textbox-container .container-button{
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+.section-one-container .so-textbox-container .container-button .price-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 40px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 40px;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.section-one-container .so-textbox-container .video-access-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 15%;
+}
+.section-one-container .so-textbox-container .video-access-container .video-access-colum{
+    display: flex;
+    height: auto;
+}
+.section-one-container .so-textbox-container .video-access-container .image-reference-box{
+    display: flex;
+    width: 145px;
+    height: 115px;
+    background-color: #fff;
+}
+.section-one-container .so-textbox-container .video-access-container .icon-play-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 115px;
+    background-color: #373737;
+}
+.section-one-container .so-textbox-container .video-access-container .icon-play-box .play-text{
+    color: #fff;
+    font-size: 0.8rem;
+}
+.play-icon{
+    text-align: center;
+}
+.section-one-container .so-imagebox-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.section-one-container .so-imagebox-container .main-hesh-img{
+    width: 85%;
+    max-width: 85%;
+    min-width: 85%;
+    margin-top: 35px;
+}
+/*////section two////*/
+.section-two-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #414141;
+}
+.section-two-container .st-imagebox-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 425px;
+    background-color: #414141;
+    padding-bottom: 25px;
+
+}
+.section-two-container .st-textbox-container{
+    display: flex;
+    width: 50%;
+    height: 425px;
+    background-color: #555555;
+    align-items: center;
+    justify-content: center;
+}
+.section-two-container .st-textbox-container .st-text-description{
+    display: flex;
+    flex-direction: column;
+}
+.section-two-container .st-textbox-container .st-text-description .st-text{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.section-two-container .st-textbox-container .st-text-description .description-icon{
+    margin-right: 20px;
+}
+/*////section three////*/
+.section-three-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(39, 39, 39);
+}
+.section-three-container .sth-textbox-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 80px 0px;
+}
+.section-three-container .sth-textbox-container .green-skull{
+    width: 7%;
+    max-width: 7%;
+}
+.section-three-container .sth-textbox-container .sth-text{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    margin: 45px 0px;
+}
+/*////section four////*/
+.section-four-container{
+    width: 100%;
+    height: 100vh;
+    max-height: 695px;
+    position: relative;
+}
+.section-four-container iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+
+}
+/*////section five////*/
+.section-five-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 0 20vh;
+    background-color: #171717;
+}
+.section-five-container .sf-textbox-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    max-height: 1100px;
+}
+.section-five-container .sf-textbox-container .sf-text-description{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.section-five-container .sf-textbox-container .sf-text-description .sf-text{
+    width: 60%;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.section-five-container .sf-textbox-container .button2{
+    display: flex;
+    width: 60%;
+    justify-content: flex-start;
+}
+.section-five-container .sf-imagebox-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    max-height: 1100px;
+}
+.section-five-container .sf-imagebox-container .hesh-image-box{
+    width: 80%;
+}
+/*////section Six////*/
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    padding: 0 20vh;
+}
+.footer-container .f-box-one{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: 50px 0px 50px;
+}
+.footer-container .f-box-one .email-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+}
+.footer-container .f-box-one .email-container .f-text{
+    color: #fff;
+    width: 80%;
+    padding-bottom: 30px;
+}
+.footer-container .f-box-one .email-container #form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.footer-container .f-box-one .email-container #form ul li{
+    margin-bottom: 20px;
+}
+
+.footer-container .f-box-one .email-container #form label{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.footer-container .f-box-one .email-container #form input{
+    width: 35%;
+    height: 40px;
+    padding: 10px;
+}
+input[type=submit]{
+    font-size: 1rem;
+    background-color: #46ac85;
+    border: none;
+    color: #fff;
+    transition: all 2 ease;
+}
+input[type="submit"]:hover{
+    transition: all 2 ease;
+    background-color: #3ad398;
+}
+.footer-container .f-box-one .f-logo-container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.footer-container .f-box-one .f-logo-container #footer-img-logo{
+    width: 25%;
+}
+.footer-container .f-box-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.footer-container .f-box-two .credits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.footer-container .f-box-two .credits .line{
+    width: 100%;
+    height: 0.5px;
+    background-color: rgb(167, 167, 167);
+}
+.footer-container .f-box-two .credits .credits-text{
+    color: #fff;
+    padding: 20px 0px;
+    font-size: 0.7rem;
+
+}
+
+
+/*MEDIA SCREEN*/
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .nav-bar{
+        padding: 5px 15vh;
+    }
+    .section-one-container .so-imagebox-container .main-hesh-img{
+        width: 100%;
+        max-width: 100%;
+        min-width: 110%;
+    }
+    .section-one-container{
+        padding: 0px 15vh;
+    }
+    .section-five-container{
+        padding: 0px 15vh;
+    }
+    .footer-container{
+        padding: 0px 15vh;
+    }
+    .section-one-container .so-textbox-container .main-text{
+        font-size: 3.8rem;
+    }
+    .section-one-container .so-textbox-container .description-text{
+        width: 80%;
+    }
+    .footer-container .f-box-one .f-logo-container #footer-img-logo{
+        width: 35%;
+        margin-top: 0px;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+    .nav-bar{
+        padding: 5px 10vh;
+    }
+    .section-one-container{
+        padding: 0px 10vh;
+    }
+    .section-one-container .so-textbox-container{
+        width: 45%;
+    }
+    .section-one-container .so-imagebox-container{
+        width: 55%;
+    }
+    .section-one-container .so-textbox-container .main-text{
+        font-size: 3.7rem;
+    }
+    .section-one-container .so-textbox-container .description-text{
+        font-size: 1.2rem;
+    }
+    .section-one-container .so-imagebox-container .main-hesh-img{
+        width: 140%;
+        max-width: 140%;
+        min-width: 110%;
+        margin-top: 0;
+    }
+    .section-one-container .so-textbox-container .description-text{
+        width: 80%;
+    }
+    .section-three-container .sth-textbox-container{
+        width: 70%;
+    }
+    .section-five-container{
+        padding: 0 10vh;
+    }
+    .section-five-container .sf-textbox-container{
+        width: 40%;
+    }
+    .section-five-container .sf-textbox-container .sf-text-description{
+        width: 80%;
+    }
+    .section-five-container .sf-textbox-container .sf-text-description .sf-text{
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    .section-five-container .sf-textbox-container .button2{
+        width: 80%;
+    }
+    .section-five-container .sf-imagebox-container{
+        width: 60%;
+    }
+    .footer-container{
+        padding: 0 10vh;
+    }
+    .footer-container .f-box-one .email-container #form input{
+        width: 50%;
+    }
+    .footer-container .f-box-one .f-logo-container #footer-img-logo{
+        width: 40%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 900px and up) */
+@media only screen and (max-width: 900px) {
+     /*mobile menu*/
+     #nav-container{
+        align-items: center;
+        justify-content: center;
+     }
+     #toggle{
+        position: fixed;
+        z-index: 1000;
+        cursor: pointer;
+        display: flex;
+    }
+    #mobile-img{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        margin: 50px 0px;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        position: fixed;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 800px;
+        width: 85%;
+        height: 100vh;
+        z-index: 500;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        top: 0;
+        background-color: #000;
+        padding: 80px;
+    }
+    #navbar.active{
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    #nav-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link{
+        margin: 10px 0px;
+        font-size: 1rem;
+    }
+    .nav-link a{
+        margin: 0px;
+    }
+    #text-line{
+        display: block;
+    }
+    ul li{
+        padding-bottom: 10px;
+    }
+    #social-icon{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .follow-text{
+        display: flex;
+        left: 0;
+        margin: 35px 0px 0px 0px;
+        color: #fff;
+    }
+    .social-links{
+        margin: 30px 0px;
+        margin-right: 15px;
+    }
+    /* End mobile menu*/
+    .section-one-container{
+        flex-direction: column;
+    }
+    .section-one-container .so-textbox-container{
+        width: 100%;
+        height: auto;
+    }
+    .section-one-container .so-textbox-container .so-text-box{
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0px 10vh;
+        height: auto;
+    }
+    .section-one-container .so-textbox-container .main-text{
+        font-size: 2.8rem;
+        width: 50%;
+        margin: 100px 0px 20px 0px;
+    }
+    .section-one-container .so-textbox-container .description-text{
+        font-size: 1rem;
+        width: 35%;
+    }
+    .section-one-container .so-textbox-container .container-button{
+        flex-direction: column;
+        height: auto;
+        width: 145px;
+    }
+    .section-one-container .so-textbox-container .video-access-container{
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0px 10vh;
+    }
+    .section-one-container .so-textbox-container .video-access-container .video-access-colum{
+        justify-content: flex-end;
+    }
+    .section-one-container .so-textbox-container .video-access-container .image-reference-box{
+        height: 100px;
+    }
+    .section-one-container .so-textbox-container .video-access-container .icon-play-box{
+        height: 100px;
+    }
+    .section-one-container .so-imagebox-container{
+        width: 100%;
+        height: 100%;
+    }
+    .section-one-container .so-imagebox-container .main-hesh-img{
+        margin-top: 120px;
+        width: 60%;
+        min-width: 50%;
+    }
+    .section-two-container .st-imagebox-container{
+        height: 45vh;
+    }
+}
+/* Small devices (phones, tablets 768px and up) */
+@media only screen and (max-width: 768px) {
+    .nav-bar{
+        padding: 5px 9vh;
+    }
+    .section-one-container .so-textbox-container .so-text-box{
+        padding: 0px 9vh;
+    }
+    .section-one-container{
+        padding: 0px 9vh;
+    }
+    .section-one-container .so-textbox-container .main-text{
+        font-size: 2.6rem;
+    }
+    .section-one-container .so-textbox-container .description-text{
+        margin-bottom: 30px;
+    }
+    .section-one-container .so-textbox-container .container-button .price-box{
+        width: 125px;
+    }
+    .button{
+        width: 125px;
+    }
+    .section-one-container .so-textbox-container .video-access-container{
+        padding: 0px 9vh;
+    }
+    .section-one-container .so-textbox-container .video-access-container .image-reference-box{
+        height: 80px;
+        width: 120px;
+    }
+    .section-one-container .so-textbox-container .video-access-container .icon-play-box{
+        height: 80px;
+        width: 120px;
+    }
+    .section-one-container .so-imagebox-container .main-hesh-img{
+        width: 70%;
+        margin-top: 25%;
+    }
+    .section-two-container{
+        flex-direction: column;
+    }
+    .section-two-container .st-imagebox-container{
+        width: 100%;
+        height: 40vh;
+    }
+    .section-two-container .st-textbox-container{
+        width: 100%;
+    }
+    .section-five-container{
+        padding: 0px 9vh;
+    }
+    .section-five-container .sf-imagebox-container .hesh-image-box{
+        width: 100%;
+    }
+    .footer-container .f-box-one .email-container #form input{
+        width: 60%;
+    }
+    .footer-container .f-box-one .f-logo-container #footer-img-logo{
+        width: 50%;
+    }
+}
+/* Small devices (phones, 620px and up) */
+@media only screen and (max-width: 620px) {
+    .section-one-container .so-textbox-container .main-text{
+        width: 81%;
+    }
+    .section-one-container .so-textbox-container .description-text{
+        width: 45%;
+    }
+    .section-one-container .so-imagebox-container .main-hesh-img{
+        width: 85%;
+        margin-top: 180px;
+    }
+    .section-one-container .so-textbox-container .video-access-container .video-access-colum{
+        justify-content: center;
+    }
+    .section-one-container .so-textbox-container .video-access-container .image-reference-box{
+        width: 120px;
+        height: 80px;
+    }
+    .section-one-container .so-textbox-container .video-access-container .icon-play-box{
+        width: 120px;
+        height: 80px;
+    }
+    .section-two-container .st-imagebox-container{
+        height: 40vh;
+    }
+    .section-five-container{
+        flex-direction: column;
+    }
+    .section-five-container .sf-textbox-container{
+        width: 100%;
+        height: auto;
+        margin: 80px 0px;
+    }
+    .section-five-container .sf-imagebox-container{
+        width: 100%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+    .section-five-container .sf-imagebox-container .hesh-image-box{
+        width: 80%;
+    }
+    .footer-container .f-box-one .email-container .f-text{
+        width: 85%;
+    }
+    .footer-container .f-box-one .email-container #form input{
+        width: 85%;
+    }
+    .footer-container .f-box-one .f-logo-container #footer-img-logo{
+        width: 55%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (phones, 426px and up) */
+@media only screen and (max-width: 426px) {
+    #nav-container{
+        padding: 0px 10vh;
+    }
+    .nav-bar{
+        padding: 5px 6vh;
+    }
+    .menu-toggle{
+        left: 55px;
+    }
+    .logo-header-one{
+        width: 80%;
+    }
+    .section-one-container{
+        padding: 0px 6vh;
+    }
+    .section-one-container .so-textbox-container .main-text{
+        width: 100%;
+        font-size: 2.2rem;
+        margin: 85px 0px 20px 0px;
+    }
+    .section-one-container .so-textbox-container .description-text{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .section-one-container .so-textbox-container .container-button{
+        width: 100%;
+        flex-direction: column;
+    }
+    .section-one-container .so-textbox-container .container-button .price-box{
+        width: 110px;
+    }
+    .button{
+        width: 110px;
+    }
+    .section-one-container .so-textbox-container .so-text-box{
+        padding: 0px 6vh;
+    }
+    .section-one-container .so-imagebox-container .main-hesh-img{
+        width: 85%;
+        margin-top: 65%;
+    }
+    .section-one-container .so-textbox-container .video-access-container{
+        padding: 0px 6vh;
+    }
+    .section-one-container .so-textbox-container .video-access-container .image-reference-box{
+        width: 95px;
+        height: 70px;
+    }
+    .section-one-container .so-textbox-container .video-access-container .icon-play-box{
+        width: 95px;
+        height: 70px;
+    }
+    .section-two-container .st-imagebox-container{
+        height: 200px;
+    }
+    .section-three-container .sth-textbox-container .green-skull{
+        width: 13%;
+        max-width: 13%;
+    }
+    .section-three-container .sth-textbox-container .sth-text{
+        font-size: 1.7rem;
+    }
+    .section-five-container{
+        padding: 0px 6vh;
+    }
+    .section-five-container .sf-textbox-container{
+        align-items: flex-start;
+        margin: 80px 0px 50px;
+        padding: 0px 20px;
+    }
+    .section-five-container .sf-textbox-container .sf-text-description{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .section-five-container .sf-textbox-container .sf-text-description .sf-text{
+        width: 100%;
+    }
+    .section-five-container .sf-imagebox-container .hesh-image-box{
+        width: 90%;
+    }
+    .footer-container{
+        padding: 0px 6vh;
+    }
+    .footer-container .f-box-one{
+        flex-direction: column;
+    }
+    .footer-container .f-box-one .email-container{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .footer-container .f-box-one .email-container .f-text{
+        width: 100%;
+    }
+    .footer-container .f-box-one .email-container #form input{
+        width: 100%;
+    }
+    .footer-container .f-box-one .f-logo-container{
+        width: 100%;
+        align-items: center;
+    }
+    .footer-container .f-box-one .f-logo-container #footer-img-logo{
+        width: 45%;
+        margin-bottom: 0px;
+    }
+}
+
+/* Small devices (phones, 376px and up) */
+@media only screen and (max-width: 376px) {
+    .section-one-container .so-textbox-container .main-text{
+        font-size: 1.5rem;
+    }
+    .section-one-container .so-imagebox-container .main-hesh-img{
+        margin-top: 63%;
+    }
+    .section-two-container .st-imagebox-container{
+        height: 170px;
+    }
+    .section-five-container .sf-textbox-container .sf-text-description .sf-text{
+        width: 100%;
+    }
+}
+
+/* Small devices (phones, 320px and up) */
+@media only screen and (max-width: 320px) {
+    .logo-header-one{
+        width: 75%;
+    }
+    .menu-toggle{
+        left: 15px;
+    }
+    .section-one-container .so-textbox-container .main-text{
+        font-size: 1.3rem;
+    }
+    .section-one-container .so-textbox-container .description-text{
+        font-size: 0.8rem;
+        width: 80%;
+    }
+    .section-one-container .so-textbox-container .container-button .price-box{
+        width: 85px;
+        font-size: 0.8rem;
+    }
+    .button{
+        width: 85px;
+        font-size: 0.8rem;
+    }
+    .section-two-container .st-imagebox-container{
+        height: 25vh;
+    }
+
+}
+
