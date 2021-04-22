@@ -836,6 +836,29 @@ input[type="submit"]:hover{
     .footer-container .f-box-one .email-container #form input{
         width: 80%;
     }
+    #mobile-img{
+        margin: 20px 0px;
+        width: 33px;
+    }
+    .nav-link{
+        font-size: 0.9rem;
+    }
+    #text-line{
+        height: 0.5px;
+    }
+    .follow-text{
+        margin: 0px;
+    }
+    .s-icons{
+        margin: 0px 20px;
+    }
+    .social-links{
+        margin: 15px;
+    }
+    #social-icon{
+        flex-direction: row;
+        align-items: center;
+    }
 }
 /* Small devices (phones, 620px and up) */
 @media only screen and (max-width: 620px) {
