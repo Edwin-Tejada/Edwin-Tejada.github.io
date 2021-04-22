@@ -698,6 +698,44 @@ input[type="submit"]:hover{
         height: 75%;
     }
 }
+/* Small devices (large phones, tablets 900px and up) and (orientation: landscape) */
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .section-one-container .so-textbox-container .so-text-box{
+        width: 60%;
+    }
+    .section-one-container .so-textbox-container .main-text{
+        width: 100%;
+        font-size: 2.6rem;
+        margin: 85px 0px 20px 0px;
+    }
+    .section-one-container .so-textbox-container .description-text{
+        width: 70%;
+    }
+    .section-one-container .so-textbox-container .container-button{
+        flex-direction: row;
+        width: auto;
+    }
+    .section-one-container .so-textbox-container .container-button .price-box{
+        width: 100px;
+    }
+    .section-one-container .so-imagebox-container .main-hesh-img{
+        margin-top: 55px;
+        width: 36%;
+        min-width: 35%;
+        margin-left: 30%;
+    }
+    .section-one-container .so-textbox-container .video-access-container .image-reference-box{
+        height: 50px;
+        width: 80px;
+    }
+    .section-one-container .so-textbox-container .video-access-container .icon-play-box{
+        height: 50px;
+        width: 90px;
+    }
+    .section-one-container .so-textbox-container .video-access-container .icon-play-box .play-text{
+        font-size: 0.6rem;
+    }
+}
 /* Small devices (phones, tablets 768px and up) */
 @media only screen and (max-width: 768px) {
     .nav-bar{
