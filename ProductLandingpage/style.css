@@ -762,6 +762,81 @@ input[type="submit"]:hover{
         width: 50%;
     }
 }
+/* Small devices (phones, tablets 768px and up) and (orientation: landscape) */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .section-one-container .so-textbox-container .so-text-box{
+        padding: 0px 12vh;
+    }
+    .section-one-container .so-textbox-container .main-text{
+        margin: 80px 0px 20px 0px;
+        font-size: 2rem;
+    }
+    .section-one-container .so-textbox-container .description-text{
+        width: 60%;
+    }
+    .section-one-container .so-textbox-container .container-button{
+        flex-direction: row;
+        width: auto;
+    }
+    .section-one-container .so-textbox-container .container-button .price-box{
+        width: 100px;
+    }
+    .section-one-container .so-imagebox-container .main-hesh-img{
+        min-width: 40%;
+        width: 40%;
+        margin-top: 8%;
+        margin-left: 40%;
+    }
+    .section-one-container .so-textbox-container .video-access-container .image-reference-box{
+        height: 50px;
+        width: 90px;
+    }
+    .section-one-container .so-textbox-container .video-access-container .icon-play-box{
+        height: 50px;
+        width: 90px;
+    }
+    .section-one-container .so-textbox-container .video-access-container .image-reference-box{
+        width: 65px;
+    }
+    .section-one-container .so-textbox-container .video-access-container .icon-play-box .play-text{
+        font-size: 0.6rem;
+    }
+    .section-two-container .st-imagebox-container{
+        height: 220px;
+    }
+    .section-three-container .sth-textbox-container .green-skull{
+        width: 10%;
+        max-width: 10%;
+    }
+    .section-three-container .sth-textbox-container .sth-text{
+        font-size: 1.7rem;
+    }
+    .section-five-container{
+        padding: 0px 12vh;
+    }
+    .section-five-container .sf-textbox-container{
+        width: 50%;
+    }
+    .section-five-container .sf-textbox-container .sf-text-description .sf-text{
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    .section-five-container .sf-imagebox-container{
+        width: 50%;
+    }
+    .section-five-container .sf-imagebox-container .hesh-image-box{
+        width: 80%;
+    }
+    .footer-container{
+        padding: 0 12vh;
+    }
+    .footer-container .f-box-one .email-container .f-text{
+        width: 100%;
+    }
+    .footer-container .f-box-one .email-container #form input{
+        width: 80%;
+    }
+}
 /* Small devices (phones, 620px and up) */
 @media only screen and (max-width: 620px) {
     .section-one-container .so-textbox-container .main-text{
