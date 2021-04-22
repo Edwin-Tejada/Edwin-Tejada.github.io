@@ -735,6 +735,25 @@ input[type="submit"]:hover{
     .section-one-container .so-textbox-container .video-access-container .icon-play-box .play-text{
         font-size: 0.6rem;
     }
+    .section-five-container .sf-textbox-container{
+        width: 50%;
+    }
+    .section-five-container .sf-textbox-container .sf-text-description .sf-text{
+        font-size: 1rem;
+        width: 90%;
+    }
+    .section-five-container .sf-textbox-container .sf-text-description .sf-text{
+        margin-bottom: 25px;
+    }
+    .section-five-container .sf-imagebox-container{
+        width: 50%;
+    }
+    .section-five-container .sf-imagebox-container .hesh-image-box{
+        width: 70%;
+    }
+    .footer-container .f-box-one .email-container #form input{
+        width: 70%;
+    }
 }
 /* Small devices (phones, tablets 768px and up) */
 @media only screen and (max-width: 768px) {
