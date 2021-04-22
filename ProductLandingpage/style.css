@@ -772,7 +772,7 @@ input[type="submit"]:hover{
         font-size: 2rem;
     }
     .section-one-container .so-textbox-container .description-text{
-        width: 60%;
+        width: 45%;
     }
     .section-one-container .so-textbox-container .container-button{
         flex-direction: row;
