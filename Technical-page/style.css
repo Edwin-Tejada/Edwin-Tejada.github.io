@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 10px;
+}
+code{
+    display: none;
+}
+.main-container{
+    display: flex;
+    max-width: 1920px;
+    height: auto;
+}
+/*Start Nav*/
+.container.nav{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100vh;
+    background-color:#000816;
+    z-index: 500;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+}
+.logo a{
+    display: flex;
+    justify-content: center;
+}
+.logo a .logo-1-w{
+    width: 80%;
+}
+.menu ul li a{
+    text-transform: uppercase;
+    color: #E1E1E1;
+    text-decoration: none;
+}
+.menu li a:hover{
+    font-weight: 600;
+    color: #fff;
+}
+.menu .movies{
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding-bottom: 20px;
+}
+.logo-2{
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+}
+.logo-2 a .logo-2-w{
+    width: 60px;
+}
+.text-intro h3{
+    color: #fff;
+    text-transform: uppercase;
+}
+/*Start Content Intro*/
+.container.content{
+    display: flex;
+    float: right;
+    width: 75.1%;
+    height: auto;
+    background-color: #00060F;
+}
+#main-doc{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.v-bg{
+    display: none;
+}
+.main-section{
+    position:relative;
+}
+.Intro-tittle{
+    position: absolute;
+    color: #fff;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    z-index: 1000;
+    background-color: #00122d;
+}
+.Intro-tittle h3{
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.Movie-number p{
+    font-size: 1.5rem;
+    color: rgb(216, 216, 216);
+    padding: 30px 60px;
+}
+.Movie-number p span{
+    font-weight: 300;
+}
+.social-container {
+    display: flex;
+    flex-direction: row;
+    right: 0.01%;
+    top: 15%;
+    position: fixed;
+    z-index: 1000;
+    height: auto;
+}
+.social-icons ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+.social-colum{
+    width: 4px;
+    height: 80px;
+    background-color: #000816;
+    margin: 0px 0px 0px 10px;
+}
+.text-container{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.text-container .text-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    padding: 60px;
+    font-size: 0.8rem;
+    color: #acacac;
+}
+.text-container .top-autor{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    text-align: end;
+    width: 50%;
+    height: 100%;
+    padding: 60px;
+    font-size: 0.8rem;
+    color: #acacac;
+}
+.overlay-one{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(1,0,69);
+    background: linear-gradient(180deg, rgba(1,0,69,0) 0%, rgba(0,6,15,1) 100%);
+}
+.line-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.line-container .line{
+    width: 80%;
+    height: 1px;
+    margin: 50px 0px;
+    background-color: #001436;
+}
+/*Start Content Movie 1*/
+.image-movie{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-image: url(img/harry-potter-film-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    margin-bottom: 50px;
+}
+.text-container-movie{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.movie-tittle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    height: auto;
+    z-index: 5;
+    color: #fff;
+    padding: 30px 60px;
+}
+.text-one{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.text-two{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+.text-three{
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin-bottom: 3px;
+}
+.movie-trailer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    height: auto;
+    z-index: 5;
+    padding: 30px 60px;
+}
+.trailer-image{
+    position: absolute;
+    bottom: -50px;
+    width: 65%;
+    height: 110px;
+    background-image: url(img/movie-1-trailer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay-two{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+.trailer-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+.trailer-button:hover{
+    font-weight: 400;
+    color: #fff;
+}
+.trailer-button span{
+    margin: 0px 10px;
+}
+.calification-container{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 0px 60px;
+    align-items: center;
+}
+.vertical-bar{
+    width: 1px;
+    height: 35px;
+    background-color: #002D74;
+    margin: 0px 30px;
+}
+.minutes p{
+    font-size: 0.8rem;
+    margin: 0;
+}
+.text-bold{
+    font-weight: 500;
+    color: #C0C0C0;
+}
+.text-normal{
+    font-weight: 300;
+    color: #8A8A8A;
+}
+.movie-text-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.container-movie-info{
+    display: flex;
+    width: 50%;
+    height: auto;
+}
+.container-movie-info .block-one{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    padding: 30px 60px;
+}
+.container-movie-info .block-two{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    padding: 30px 60px;
+}
+.container-movie-resumen{
+    width: 50%;
+    height: auto;
+}
+.block-one p{
+    margin: 0;
+}
+.block-two p{
+    margin: 0;
+}
+.text-box{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+.container-movie-resumen{
+    color: #fff;
+}
+.resumen-text{
+    color: #979797;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 30px 60px 30px 0px;
+}
+/*Start Content Movie 2*/
+.image-movie.two{
+    background-image: url(img/harry-potter-film-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -200px;
+}
+.trailer-image.two{
+    background-image: url(img/movie-2-trailer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20px;
+}
+/*Start Content Movie 3*/
+.image-movie.three{
+    background-image: url(img/harry-potter-film-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -35px;
+}
+.trailer-image.three{
+    background-image: url(img/movie-3-trailer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20px;
+}
+/*Start Content Movie 4*/
+.image-movie.four{
+    background-image: url(img/harry-potter-film-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -35px;
+}
+.trailer-image.four{
+    background-image: url(img/movie-4-trailer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20px;
+}
+/*Start Content Movie 5*/
+.image-movie.five{
+    background-image: url(img/harry-potter-film-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -55px;
+}
+.trailer-image.five{
+    background-image: url(img/movie-5-trailer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20px;
+}
+/*Start Content Movie 6*/
+.image-movie.six{
+    background-image: url(img/harry-potter-film-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -55px;
+}
+.trailer-image.six{
+    background-image: url(img/movie-6-trailer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20px;
+}
+/*Start Content Movie 7*/
+.image-movie.seven{
+    background-image: url(img/harry-potter-film-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -55px;
+}
+.trailer-image.seven{
+    background-image: url(img/movie-7-trailer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20px;
+}
+/*Start Content Movie 8*/
+.image-movie.eight{
+    background-image: url(img/harry-potter-film-8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -55px;
+}
+.trailer-image.eight{
+    background-image: url(img/movie-8-trailer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20px;
+}
+.autor{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+.autor-name{
+    font-size: 0.8rem;
+    color: rgb(102, 102, 102);
+}
+
+
+/*MEDIA SCREEN*/
+ /* Large devices (laptops/desktops, 1200px and up) */
+ @media only screen and (max-width: 1200px) {
+    .logo a .logo-1-w{
+        width: 75%;
+    }
+    .menu .movies{
+        padding: 0px 40px 20px;
+    }
+} 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (max-width: 992px) {
+    .logo{
+        height: 175px;
+    }
+    .logo a .logo-1-w{
+        width: 60%;
+    }
+    .logo-2 a .logo-2-w{
+        width: 45px;
+    }
+    .menu .movies{
+        font-size: 0.7rem;
+    }
+    .Intro-tittle{
+        font-size: 0.7rem;
+        padding: 20px 40px;
+    }
+    .image-movie{
+        height: 250px;
+        background-position-y: -70px;
+    }
+    .text-container .text-intro{
+        padding: 40px;
+        font-size: 0.7rem;
+    }
+    .text-container .top-autor{
+        padding: 40px;
+        font-size: 0.7rem;
+    }
+    .social-container{
+        top: 10%;
+    }
+    .line-container .line{
+        margin: 40px 0px;
+    }
+    .Movie-number p{
+        font-size: 1.3rem;
+        padding: 20px 40px;
+    }
+    .movie-tittle{
+        padding: 30px 40px;
+    }
+    .text-two{
+        font-size: 1rem;
+    }
+    .text-three{
+        font-size: 1rem;
+    }
+    .trailer-image{
+        height: 90px;
+    }
+    .movie-trailer{
+        padding: 30px 40px;
+    }
+    .trailer-image{
+        width: 75%;
+    }
+    .calification-container{
+        font-size: 0.7rem;
+        padding: 0px 40px;
+    }
+    .minutes p{
+        font-size: 0.7rem;
+    }
+    .vertical-bar{
+        margin: 0px 20px;
+    }
+    .movie-text-container{
+        flex-direction: column;
+    }
+    .container-movie-info{
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    .container-movie-info .block-one{
+        padding: 30px 40px;
+    }
+    .container-movie-info .block-two{
+        padding: 30px 40px;
+    }
+    .container-movie-resumen{
+        width: 100%;
+    }
+    .resumen-text{
+        padding: 0px 40px;
+        font-size: 0.7rem;
+    }
+    .image-movie.two{
+        background-position-y: -135px;
+    }
+} 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (max-width: 768px) {
+    .container.nav{
+        width: 100%;
+        height: 55px;
+        z-index: 1200;
+    }
+    .container.nav row{
+        width: 100%;
+    }
+    .logo{
+        justify-content: center;
+        height: 55px;
+    }
+    .logo a{
+        width: 27%;
+        z-index: 1500;
+    }
+    .container.content{
+        width: 100%;
+        margin-top: 55.5px;
+    }
+    /*Mobile Menu*/
+    #navbar{
+        position: absolute;
+        background-color: #000816;
+        width: 100%;
+        height: auto;
+        padding: 60px;
+        overflow: scroll;
+        transition: all 0.5s ease-in-out;
+        display: none;
+    }
+    .menu .movies{
+        padding: 0px 0px 20px;
+    }
+    .logo-2{
+        margin-top: 0;
+    }
+    /*End Mobile Menu*/
+    .social-container{
+        top: 20%;
+    }
+    .text-container .text-intro{
+        padding: 0px 40px;
+    }
+    .text-container .top-autor{
+        padding: 0px 40px;
+    }
+    .Movie-number p{
+        padding: 20px 40px;
+    }
+    .calification-container{
+        padding: 0px 40px;
+    }
+} 
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 600px) {
+    .Intro-tittle{
+        padding: 10px 40px;
+    }
+    .text-container .text-intro{
+        width: 70%;
+        font-size: 0.6rem;
+    }
+    .text-container .top-autor{
+        width: 30%;
+        font-size: 0.6rem;
+    }
+    .Movie-number p{
+        font-size: 1.2rem;
+    }
+    .text-two{
+        font-size: 0.8rem;
+    }
+    .trailer-image{
+        height: 75px;
+    }
+    .trailer-button{
+        font-size: 0.8rem;
+    }
+    .minutes p{
+        font-size: 0.6rem;
+    }
+    .text-box{
+        font-size: 0.6rem;
+    }
+    .resumen-text{
+        font-size: 0.6rem;
+    }
+    .image-movie.two{
+        background-position-y: -100px;
+    }
+}
+
+/* Extra small devices (phones, 426px and down) */
+@media only screen and (max-width: 426px) {
+    .logo a{
+        width: 40%;
+    }
+    #Intro{
+        height: 85vh;
+    }
+    .Intro-tittle{
+        top: 45vh;
+        padding: 10px 46px;
+    }
+    .h-bg{
+        display: none;
+    }
+    .v-bg{
+        display: block;
+    }
+    .text-container{
+        flex-direction: column;
+    }
+    .text-container .text-intro{
+        width: 100%;
+    }
+    .text-container .top-autor{
+        width: 100%;
+        height: 13%;
+    }
+    .image-movie{
+        background-position-y: 0px;
+    }
+    .text-container-movie{
+        flex-direction: column;
+    }
+    .movie-tittle{
+        width: 100%;
+        height: 70%;
+        padding: 0px 40px;
+    }
+    .movie-trailer{
+        width: 100%;
+        padding: 30px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .trailer-image{
+        width: 60%;
+        bottom: -30px;
+    }
+    .image-movie.two{
+        background-position-y: -45px;
+    }
+    .image-movie.three{
+        background-position-y: 0px;
+    }
+    .image-movie.four{
+        background-position-y: 0px;
+    }
+    .image-movie.five{
+        background-position-y: -15px;
+    }
+    .image-movie.six{
+        background-position-y: -15px;
+    }
+    .image-movie.seven{
+        background-position-y: -5px;
+    }
+    .image-movie.eight{
+        background-position-y: -5px;
+    }
+  }
+  
+
+ 
+ 
+  
+  
