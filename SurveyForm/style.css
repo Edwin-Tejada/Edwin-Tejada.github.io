@@ -114,12 +114,12 @@ h2{
     font-weight: 700;
     font-size: 1.2rem;
     align-self: start;
-    margin: 0px 0px 40px;
+    margin: 30px 0px 20px;
     padding: 0px;
 }
 #form-question-title{
     font-size: 1.1rem;
-    margin: 0px 0px 20px;
+    margin: 0px 0px 15px;
 }
 .option-margin{
     margin: 10px 0px;
@@ -141,9 +141,9 @@ h2{
 #block-line{
     display: block;
     width: 100%;
-    height: 0.3px;
+    height: 1px;
     margin: 10px 0px 30px;
-    background-color: #292929;
+    background-color: #9f9f9f;
 }
 ul{
     display: flex;
@@ -157,7 +157,7 @@ ul{
 }
 ul li{
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 /*Form Reset Styles*/
 input[type=text], input[type=email], input[type=number]{
@@ -166,7 +166,7 @@ input[type=text], input[type=email], input[type=number]{
     box-sizing: border-box;
     padding: 0px 10px;
     border-radius: 7px;
-    margin-top: 20px;
+    margin-top: 15px;
     border-width: 1px;
     border-style: solid;
     border-color: none;
@@ -214,7 +214,6 @@ input[type=submit]:hover{
 }
 
 
-
 /*MEDIA SCREEN*/
 
 
@@ -222,12 +221,15 @@ input[type=submit]:hover{
 @media only screen and (max-width: 992px) {
     #box-one{
         width: 100%;
-        height: 25vh;
+        height: 40vh;
     }
     #box-two{
         width: 100%;
+        height: auto;
         margin-left: 0;
-        margin-top: 25vh;
+        margin-top: 35vh;
+        border-radius: 25px;
+        position: absolute;
     }
     #title{
         font-size: 3.2rem;
@@ -244,6 +246,12 @@ input[type=submit]:hover{
     }
     .credits-two{
         display: block;
+    }
+    ul li{
+        margin-bottom: 15px;
+    }
+    input[type=text], input[type=email], input[type=number]{
+        margin-top: 10px;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
