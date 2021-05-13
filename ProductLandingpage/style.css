@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 body {
+    overflow-x: hidden !important;
     min-height: 100vh;
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
