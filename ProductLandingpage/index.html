@@ -4,10 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product landinpage - by Edwin</title>
+  <meta name="robots" content="index"/>
   <link rel="icon" type="image/png" href="img/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content=" skull candy product landingpage">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Edwin-Tejada ©">
+  <!--Fonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!--Main Styles-->
+  <link rel="stylesheet" href="style.css">
+  <!--AOS scroll animation-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,15 +62,15 @@
     <div id="sec-one" class="section-one-container">
       <div class="so-textbox-container">
         <div class="so-text-box">
-          <h1 class="main-text">WIRELESS SIMPLICITY WITH NOISE CANCELING</h1>
-          <p class="description-text">Hesh® ANC Noise Canceling Wireless Headphones</p>
-          <div class="container-button">
+          <h1 class="main-text" data-aos="fade-down">WIRELESS SIMPLICITY WITH NOISE CANCELING</h1>
+          <p class="description-text" data-aos="fade-up">Hesh® ANC Noise Canceling Wireless Headphones</p>
+          <div class="container-button" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
             <div class="price-box">$129.99</div>
             <a href="https://www.skullcandy.com/hesh-anc-wireless-headphones" target="_blank"><div class="button">BUY NOW</div></a>
           </div>
         </div>
         <div class="video-access-container">
-          <div class="video-access-colum">
+          <div class="video-access-colum" data-aos="fade-up">
             <div class="image-reference-box"><img src="img/girl-photo-video.png"></div>
             <div class="icon-play-box">
               <span class="play-icon"><a href="#video"><img src="img/play-icon.svg" style="width: 50%;"></a></span>
@@ -72,16 +80,16 @@
         </div>
       </div>
       <div class="so-imagebox-container">
-        <img class="main-hesh-img" src="img/Hesh-ANC-One-ori.png" alt="Hesh ANC Headphones">
+        <img class="main-hesh-img" src="img/Hesh-ANC-One-ori.png" alt="Hesh ANC Headphones" data-aos="fade-left">
       </div>
     </div>
     <!--Section two-->
     <div id="sec-two" class="section-two-container">
       <div class="st-imagebox-container">
-        <img class="hesh-image-front" src="img/Hesh-ANC-One-front.png" alt="Hesh ANC Headphones Front">
+        <img class="hesh-image-front" data-aos="fade-right" src="img/Hesh-ANC-One-front.png" alt="Hesh ANC Headphones Front">
       </div>
       <div class="st-textbox-container">
-        <div class="st-text-description">
+        <div class="st-text-description" data-aos="fade-left">
           <p class="st-text"><span class="description-icon"><img src="img/noice-icon.svg"></span>Active Noise Cancellation</p>
           <p class="st-text"><span class="description-icon"><img src="img/battery-icon.svg"></span>Up to 22 Hours of Battery</p>
           <p class="st-text"><span class="description-icon"><img src="img/charge-icon.svg"></span>Rapid Charge (10 min = 3 hrs)</p>
@@ -98,14 +106,14 @@
     <!--Section four-->
     <div id="sec-four" class="section-three-container">
       <div class="sth-textbox-container">
-        <img src="img/green-skull.png" alt="skull-head-image" class="green-skull">
-        <p class="sth-text">Only Skullcandy headphones are custom-tuned to deliver music you can feel. From the lyrics in your soul to the bass in your bones.</p>
-        <img src="img/feel-skull.png" alt="feel-skull-image" class="feel-skull-image">
+        <img src="img/green-skull.png" alt="skull-head-image" class="green-skull" data-aos="fade-down">
+        <p class="sth-text" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">Only Skullcandy headphones are custom-tuned to deliver music you can feel. From the lyrics in your soul to the bass in your bones.</p>
+        <img src="img/feel-skull.png" alt="feel-skull-image" class="feel-skull-image" data-aos="fade-up">
       </div>
     </div>
     <!--Section five-->
     <div id="sec-five" class="section-five-container">
-      <div class="sf-textbox-container">
+      <div class="sf-textbox-container" data-aos="fade-right">
         <div class="sf-text-description">
           <p class="sf-text">More noise canceling, less flexing.</p>
           <p class="sf-text">Time-proven sound quality.</p>
@@ -117,7 +125,7 @@
           <a href="https://www.skullcandy.com/hesh-anc-wireless-headphones" target="_blank"><div class="button">See more here</div></a>
         </div>
       </div>
-      <div class="sf-imagebox-container">
+      <div class="sf-imagebox-container" data-aos="fade-left">
         <img class="hesh-image-box" src="img/box-1.png" alt="Hesh ANC Headphones box">
       </div>
     </div>
@@ -125,7 +133,7 @@
     <div class="footer-container">
       <footer>
         <div class="f-box-one">
-          <div class="email-container">
+          <div class="email-container" data-aos="fade-up">
             <p class="f-text">Enter your email to receive discounts and promotions</p>
             <form action="https://www.freecodecamp.com/email-submit" id="form">
               <ul>
@@ -141,14 +149,14 @@
               </ul>
             </form>
           </div>
-          <div class="f-logo-container">
+          <div class="f-logo-container" data-aos="fade-up">
             <img id="footer-img-logo" src="img/logo-footer.svg" alt="logo">
           </div>
         </div>
         <div class="f-box-two">
           <div class="credits">
             <div class="line"></div>
-            <p class="credits-text">Product Landingpage by Edwin</p>
+            <p class="credits-text">Product Landingpage by Edwin Tejada ©</p>
           </div>
        </div>
       </footer>
@@ -158,7 +166,8 @@
 
 <!-- partial:index.partial.html -->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
+<!-- AOS Animation scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- partial -->
   <script  src="script.js"></script>
 
