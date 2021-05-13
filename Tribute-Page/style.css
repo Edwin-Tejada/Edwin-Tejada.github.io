@@ -320,6 +320,21 @@ h1,h2{
         font-size: 2rem;
     }
 }
+/* Small devices (phones, tablets 768px and up) and (orientation: landscape) */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    #main-bg{
+        height: 100vh;
+    }
+    #overlay{
+        height: 100vh;
+    }
+    #title .years{
+        top: 25px;
+    }
+    #tribute-info{
+        top: -45px;
+    }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
     #tribute-info {
