@@ -170,7 +170,7 @@ input[type=text], input[type=email], input[type=number]{
     border-style: solid;
     border-color: none;
     outline-color: #0086D1;
-    background-color: #eaeaea;
+    background-color: #eeeef4;
     border-width: 0px;
 }
 input[type=radio], input[type=checkbox], textarea{
@@ -203,7 +203,7 @@ select{
     padding: 0px 10px;
     border-radius: 7px;
     outline-color: #0086D1;
-    background-color: #eaeaea;
+    background-color: #eeeef4;
     border-width: 0px;
 }
 textarea{
@@ -211,7 +211,7 @@ textarea{
     box-sizing: border-box;
     border-radius: 7px;
     padding: 10px;
-    background-color: #eaeaea;
+    background-color: #eeeef4;
     border-width: 0px;
 }
 input[type=submit]:hover{
@@ -257,6 +257,22 @@ input[type=submit]:hover{
     }
     input[type=text], input[type=email], input[type=number]{
         margin-top: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 734px and Landscape) */
+@media only screen and (max-width: 735px) and (orientation: landscape){
+    #box-two-container{
+        margin: 25px;
+    }
+    #description{
+        margin: 5px 0px;
+    }
+    #box-one{
+        height: 46vh;
+    }
+    #box-two{
+        margin-top: 40vh;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -328,4 +344,5 @@ input[type=submit]:hover{
         margin-top: 20vh;
     }
 }
+
 
