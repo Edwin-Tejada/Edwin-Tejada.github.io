@@ -12,6 +12,7 @@ body {
     min-height: -webkit-fill-available;
   }
 html{
+    overflow-x: hidden !important;
     scroll-behavior: smooth;
     height: -webkit-fill-available;
 }
