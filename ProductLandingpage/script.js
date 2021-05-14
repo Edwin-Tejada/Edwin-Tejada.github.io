@@ -1,15 +1,13 @@
 //AOS Animation on Scroll
 AOS.init({
-  offset: 50,
+  offset: 30,
   duration: 1300,
   easing: 'ease-in-out',
   delay: 70,
 });
 //End AOS Animation on Scroll
 
-
-//Responsive Nav
-
+//Responsive Nav Mobile
 const header = document.getElementById('header')
 const toggle = document.getElementById('toggle');
 const navbar = document.getElementById('navbar');
