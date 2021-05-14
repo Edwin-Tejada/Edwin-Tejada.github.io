@@ -185,21 +185,30 @@ ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 145px;
+    width: 100px;
     height: 40px;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid rgb(81 81 81);
 }
 .button{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 145px;
     height: 40px;
+    padding: 0px 10px;
     color: #000;
     background-color: #fff;
     cursor: pointer;
-    transition: all 1s ease;
+    transition: all 0.5s ease-in-out;
+    -webkit-box-shadow: 0px 5px 8px 7px #111111;
+    box-shadow: 0px 12px 19px 0px #111111;
+}
+.button:hover{
+    transition: all 0.5s ease-in-out;
+    padding: 0px 20px;
+}
+.btn-arrow{
+    margin: 0px 0px 0px 10px;
 }
 .section-one-container .so-textbox-container .video-access-container{
     display: flex;
@@ -797,7 +806,8 @@ input[type="submit"]:hover{
         width: 125px;
     }
     .button{
-        width: 125px;
+        width: auto;
+        padding: 0px 10px;
     }
     .section-one-container .so-textbox-container .video-access-container{
         padding: 0px 9vh;
@@ -1037,14 +1047,15 @@ input[type="submit"]:hover{
         margin-bottom: 20px;
     }
     .section-one-container .so-textbox-container .container-button{
-        width: 100%;
+        width: 110px;
         flex-direction: column;
     }
     .section-one-container .so-textbox-container .container-button .price-box{
-        width: 95px;
+        width: 110px;
     }
     .button{
-        width: 95px;
+        width: auto;
+        padding: 0px 10px;
     }
     .section-one-container .so-textbox-container .so-text-box{
         padding: 0px 6vh;
