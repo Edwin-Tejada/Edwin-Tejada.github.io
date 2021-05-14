@@ -206,6 +206,7 @@ ul li{
     flex-direction: column;
     justify-content: flex-end;
     height: 15%;
+    z-index: 500;
 }
 .section-one-container .so-textbox-container .video-access-container .video-access-colum{
     display: flex;
@@ -940,6 +941,19 @@ input[type="submit"]:hover{
     }
 }
 /* Small devices (phones, 620px and up) */
+@media only screen and (max-width: 670px) and (orientation: landscape) {
+    .section-one-container .so-textbox-container .main-text{
+        font-size: 1.7rem;
+    }
+    .section-one-container .so-imagebox-container .main-hesh-img{
+        min-width: 30%;
+        width: 35%;
+    }
+    .section-one-container .so-textbox-container .video-access-container .image-reference-box{
+        display: none;
+    }
+}
+/* Small devices (phones, 620px and up) */
 @media only screen and (max-width: 620px) {
     .section-one-container .so-textbox-container .main-text{
         width: 81%;
@@ -1015,11 +1029,11 @@ input[type="submit"]:hover{
     }
     .section-one-container .so-textbox-container .main-text{
         width: 100%;
-        font-size: 1.9rem;
-        margin: 85px 0px 20px 0px;
+        font-size: 1.7rem;
+        margin: 85px 0px 10px 0px;
     }
     .section-one-container .so-textbox-container .description-text{
-        width: 100%;
+        width: 80%;
         margin-bottom: 20px;
     }
     .section-one-container .so-textbox-container .container-button{
@@ -1037,7 +1051,7 @@ input[type="submit"]:hover{
     }
     .section-one-container .so-imagebox-container .main-hesh-img{
         width: 45vh;
-        margin-top: 39%;
+        margin-top: 20vh;
     }
     .section-one-container .so-textbox-container .video-access-container{
         padding: 0px 6vh;
