@@ -5,7 +5,7 @@ AOS.init({
   easing: 'ease-in-out',
   delay: 70,
 });
-//End AOS Animation on Scroll
+
 
 //Responsive Nav Mobile
 const header = document.getElementById('header')
@@ -23,3 +23,4 @@ const navbar = document.getElementById('navbar');
         toggle.classList.toggle('active');
         navbar.classList.toggle('active');
       }
+      
