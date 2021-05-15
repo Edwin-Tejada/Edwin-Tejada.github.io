@@ -47,6 +47,35 @@ code{
 .logo a .logo-1-w{
     width: 80%;
 }
+/*Toggle Movies*/
+#toggle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 0px 40px;
+    background-color: #001436;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+#toggle p{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #fff;
+    padding: 5px 0px;
+}
+#toggle .arrow-menu img{
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+#toggle.active .arrow-menu img{
+    transform: rotate(180deg);
+}
+
+
 .menu ul li a{
     text-transform: uppercase;
     color: #E1E1E1;
@@ -577,18 +606,28 @@ code{
     }
     .container.content{
         width: 100%;
-        margin-top: 55.5px;
+        margin-top: 77px;
     }
-    /*Mobile Menu*/
+    /*////////Mobile Menu////////*/
+    #toggle{
+        display: flex;
+        cursor: pointer;
+    }
     #navbar{
         position: absolute;
         background-color: #000816;
         width: 100%;
         height: auto;
         padding: 60px;
-        overflow: scroll;
+        top: -900%;
+        opacity: 0;
         transition: all 0.5s ease-in-out;
-        display: none;
+        /*display: none;*/
+    }
+    #navbar.active{
+        top: 140%;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
     }
     .menu .movies{
         padding: 0px 0px 20px;

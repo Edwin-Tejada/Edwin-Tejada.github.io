@@ -14,31 +14,36 @@
 
 
 <body>
-    <!--Nav-->
-    <div id="main-container">
-        <div class="container nav">
-            <row>
-                <div class="logo">
-                    <a href="https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection"><img class="logo-1-w" src="img/logo.png" alt="harry-potter-logo"></a>
-                </div>
-                <nav class="menu" id="navbar">
-                    <ul>
-                        <header><li class="movies"><a class="nav-link" href="#Intro">Intro</li></a></header>
-                        <li class="movies"><a class="nav-link" href="#The_Philosopher's_Stone">the Philosopher's Stone</li></a>
-                        <li class="movies"><a class="nav-link" href="#The_Chamber_of_Secrets">the Chamber of Secrets</li></a>
-                        <li class="movies"><a class="nav-link" href="#The_Prisoner_of_Azkaban">The Prisoner of Azkaban</li></a>
-                        <li class="movies"><a class="nav-link" href="#The_Goblet_of_Fire">The Goblet of Fire</li></a>
-                        <li class="movies"><a class="nav-link" href="#The_Order_of_The_Phoenix">The Order of The Phoenix</li></a>
-                        <li class="movies"><a class="nav-link" href="#The_Half-Blood_Prince">The Half-Blood Prince</li></a>
-                        <li class="movies"><a class="nav-link" href="#The_Deathly_Hallows_PART_1">The Deathly Hallows Part 1</li></a>
-                        <li class="movies"><a class="nav-link" href="#The_Deathly_Hallows_PART_2">The Deathly Hallows Part 2</li></a>
-                    </ul>
-                    <div class="logo-2">
-                        <a href="https://www.wizardingworld.com/"><img class="logo-2-w" src="img/logo-2.png" alt="wizarding-world-logo"></a>
+        <!--header-->
+        <div id="header">
+            <div class="container nav">
+                <row>
+                    <div class="logo">
+                        <a href="https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection"><img class="logo-1-w" src="img/logo.png" alt="harry-potter-logo"></a>
                     </div>
-                </nav>
-                
-            </row>
+                    <!--Toggle Movies-->
+                    <div id="toggle">
+                        <p>Movie List<span class="arrow-menu"><img src="img/arrow.svg" alt="arrow-menu.svg"></span></p>
+                    </div>
+                    <!--Nav Bar-->
+                    <nav id="navbar" class="menu">
+                        <ul>
+                            <header></header><li class="movies"><a class="nav-link" href="#Intro">Intro</li></a></header>
+                            <li class="movies"><a class="nav-link" href="#The_Philosopher's_Stone">the Philosopher's Stone</li></a>
+                            <li class="movies"><a class="nav-link" href="#The_Chamber_of_Secrets">the Chamber of Secrets</li></a>
+                            <li class="movies"><a class="nav-link" href="#The_Prisoner_of_Azkaban">The Prisoner of Azkaban</li></a>
+                            <li class="movies"><a class="nav-link" href="#The_Goblet_of_Fire">The Goblet of Fire</li></a>
+                            <li class="movies"><a class="nav-link" href="#The_Order_of_The_Phoenix">The Order of The Phoenix</li></a>
+                            <li class="movies"><a class="nav-link" href="#The_Half-Blood_Prince">The Half-Blood Prince</li></a>
+                            <li class="movies"><a class="nav-link" href="#The_Deathly_Hallows_PART_1">The Deathly Hallows Part 1</li></a>
+                            <li class="movies"><a class="nav-link" href="#The_Deathly_Hallows_PART_2">The Deathly Hallows Part 2</li></a>
+                        </ul>
+                        <div class="logo-2">
+                            <a href="https://www.wizardingworld.com/"><img class="logo-2-w" src="img/logo-2.png" alt="wizarding-world-logo"></a>
+                        </div>
+                    </nav>  
+                </row>
+            </div>
         </div>
         <!--Content-->
         <div class="container content">
@@ -838,13 +843,13 @@
                 </row>
             </main>
         </div>
-    </div>
 
     <!-- partial:index.partial.html -->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
+<!-- AOS Animation scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- partial -->
-  <script  src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 
