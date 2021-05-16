@@ -23,4 +23,4 @@ const navbar = document.getElementById('navbar');
         toggle.classList.toggle('active');
         navbar.classList.toggle('active');
       }
-      
+
