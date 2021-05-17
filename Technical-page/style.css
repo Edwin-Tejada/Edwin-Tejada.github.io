@@ -83,8 +83,6 @@ code{
 #toggle.active .arrow-menu img{
     transform: rotate(180deg);
 }
-
-
 .menu ul li a{
     text-transform: uppercase;
     color: #E1E1E1;
@@ -118,13 +116,15 @@ code{
     width: 75.1%;
     height: auto;
     background-color: #00060F;
-    
 }
 #main-doc{
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
+}
+.h-bg-ipad{
+    display: none;
 }
 .v-bg{
     display: none;
@@ -503,16 +503,70 @@ code{
 }
 
 
-/*MEDIA SCREEN*/
- /* Large devices (laptops/desktops, 1200px and up) */
- @media only screen and (max-width: 1200px) {
+/*/////////////MEDIA SCREEN/////////////*/
+ /* Large devices (laptops/desktops, 1024px and up) */
+ @media only screen and (max-width: 1024px) {
     .logo a .logo-1-w{
         width: 75%;
     }
     .menu .movies{
-        padding: 0px 40px 20px;
+        padding: 0px 40px 15px;
     }
-} 
+    .logo-2{
+        margin-top: 25%;
+    }
+    .logo-2 a .logo-2-w{
+        width: 50px;
+    }
+    .Intro-tittle{
+        font-size: 0.8rem;
+    }
+    .text-container{
+        padding-bottom: 0px;
+    }
+    .text-container .text-intro{
+        width: 80%;
+        font-size: 0.8rem;
+    }
+    .text-container .top-autor{
+        width: 80%;
+        font-size: 0.7rem;
+    }
+    .Movie-number p{
+        font-size: 1.2rem;
+    }
+    .text-two{
+        font-size: 1rem;
+    }
+    .text-three{
+        font-size: 1rem;
+    }
+    .image-movie{
+        height: 250px;
+    }
+    .trailer-image{
+        height: 80px;
+        bottom: -25px;
+    }
+    .vertical-bar{
+        margin: 0px 15px;
+    }
+    .minutes p{
+        font-size: 0.7rem;
+    }
+    .movie-text-container{
+        flex-direction: column;
+    }
+    .container-movie-info{
+        width: 100%;
+    }
+    .container-movie-resumen{
+        width: 100%;
+    }
+    .resumen-text{
+        padding: 0px 60px;
+    }
+}
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (max-width: 992px) {
     .logo{
@@ -528,19 +582,20 @@ code{
         font-size: 0.7rem;
     }
     .Intro-tittle{
-        font-size: 0.7rem;
-        padding: 20px 40px;
+        font-size: 0.8rem;
     }
     .image-movie{
         height: 250px;
         background-position-y: -70px;
     }
     .text-container .text-intro{
-        padding: 40px;
+        padding: 10px 0px;
+        width: 70%;
         font-size: 0.7rem;
     }
     .text-container .top-autor{
-        padding: 40px;
+        padding: 0px;
+        width: 70%;
         font-size: 0.7rem;
     }
     .social-container{
@@ -563,13 +618,11 @@ code{
         font-size: 1rem;
     }
     .trailer-image{
-        height: 90px;
+
+        height: 75px;
     }
     .movie-trailer{
         padding: 30px 40px;
-    }
-    .trailer-image{
-        width: 75%;
     }
     .calification-container{
         font-size: 0.7rem;
@@ -608,7 +661,7 @@ code{
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (max-width: 768px) {
      html{
-         scroll-padding-top: 89px;
+         scroll-padding-top: 112px;
      }
     .container.nav{
         width: 100%;
@@ -622,16 +675,19 @@ code{
         position: relative;
         background-color: #000816;
         justify-content: center;
-        height: 55px;
+        height: 75px;
         z-index: 1500;
     }
     .logo a{
-        width: 27%;
+        width: 35%;
         z-index: 1500;
+    }
+    #toggle p{
+        font-size: 0.9rem;
     }
     .container.content{
         width: 100%;
-        margin-top: 77px;
+        margin-top: 112px;
     }
     /*////////Mobile Menu////////*/
     #toggle{
@@ -662,13 +718,28 @@ code{
         margin-top: 0;
     }
     /*End Mobile Menu*/
+    .h-bg-ipad{
+        display: flex;
+    }
+    .h-bg{
+        display: none;
+    }
     .social-container{
         top: 20%;
     }
+    .text-container{
+        justify-content: center;
+    }
+    .text-container .logo-main{
+        width: 100%;
+    }
     .text-container .text-intro{
-        padding: 0px 40px;
+        font-size: 1rem;
+        padding: 30px 40px;
+        width: 80%;
     }
     .text-container .top-autor{
+        width: 80%;
         padding: 0px 40px;
     }
     .Movie-number p{
@@ -730,6 +801,9 @@ code{
         padding: 10px 46px;
     }
     .h-bg{
+        display: none;
+    }
+    .h-bg-ipad{
         display: none;
     }
     .v-bg{

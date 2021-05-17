@@ -1,9 +1,9 @@
 //AOS Animation on Scroll
 AOS.init({
-  offset: 150,
+  offset: 130,
   duration: 1300,
   easing: 'ease-in-out',
-  delay: 90,
+  delay: 40,
 });
 
 
