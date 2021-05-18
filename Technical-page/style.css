@@ -131,6 +131,7 @@ code{
 }
 .main-section{
     position:relative;
+    overflow: hidden;
 }
 .Intro-tittle{
     position: absolute;
@@ -897,15 +898,28 @@ code{
 
 /* Extra small devices (phones, 426px and down) */
 @media only screen and (max-width: 426px) {
+    .logo{
+        height: 55px;
+    }
     .logo a{
-        width: 40%;
+        width: 46%;
+    }
+    .logo-2{
+        margin-top: 25px;
+    }
+    #navbar{
+        padding: 40px;
+    }
+    .container.content{
+        margin-top: 93px;
     }
     #Intro{
         height: 85vh;
     }
     .Intro-tittle{
-        top: 45vh;
-        padding: 10px 46px;
+        top: 35vh;
+        padding: 5px 30px;
+        display: none;
     }
     .h-bg{
         display: none;
@@ -918,13 +932,21 @@ code{
     }
     .text-container{
         flex-direction: column;
+        padding-top: 0%;
+        justify-content: flex-end;
+    }
+    .text-container .logo-main{
+        width: 85%;
+        padding: 10px 60px;
     }
     .text-container .text-intro{
         width: 100%;
+        font-size: 0.7rem;
     }
     .text-container .top-autor{
         width: 100%;
         height: 13%;
+        justify-content: center;
     }
     .image-movie{
         background-position-y: 0px;
@@ -952,7 +974,8 @@ code{
         background-position-y: -45px;
     }
     .image-movie.three{
-        background-position-y: 0px;
+        background-position-y: -5px;
+        background-position-x: -29px;
     }
     .image-movie.four{
         background-position-y: 0px;
@@ -965,9 +988,11 @@ code{
     }
     .image-movie.seven{
         background-position-y: -5px;
+        background-position-x: -20px;
     }
     .image-movie.eight{
-        background-position-y: -5px;
+        background-position-y: -21px;
+        background-position-x: -31px;
     }
   }
   
