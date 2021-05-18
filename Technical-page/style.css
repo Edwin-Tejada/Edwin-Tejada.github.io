@@ -786,6 +786,9 @@ code{
     #toggle p{
         font-size: 1rem;
     }
+    #navbar.active{
+        top: 99%;
+    }
     .container.content{
         margin-top: 123px;
     }
