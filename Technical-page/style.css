@@ -919,7 +919,7 @@ code{
         padding: 40px;
     }
     .container.content{
-        margin-top: 92px;
+        margin-top: 90px;
     }
     #Intro{
         height: 85vh;
@@ -944,8 +944,8 @@ code{
         justify-content: flex-end;
     }
     .text-container .logo-main{
-        width: 85%;
-        padding: 10px 60px;
+        width: 90%;
+        padding: 30px 60px;
     }
     .text-container .text-intro{
         width: 100%;
@@ -1010,6 +1010,9 @@ code{
 @media only screen and (max-width: 376px) {
     html{
         scroll-padding-top: 91px;
+    }
+    .container.content{
+        margin-top: 90px;
     }
     .image-movie{
         height: 265px;
