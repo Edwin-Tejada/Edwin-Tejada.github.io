@@ -322,7 +322,13 @@ code{
     color: #fff;
 }
 .trailer-button span{
-    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+.trailer-button span img{
+    width: 70%;
 }
 .calification-container{
     display: flex;
@@ -904,7 +910,7 @@ code{
 /* Extra small devices (phones, 426px and down) */
 @media only screen and (max-width: 426px) {
     html{
-        scroll-padding-top: 92px;
+        scroll-padding-top: 90px;
     }
     .logo{
         height: 55px;
@@ -919,7 +925,7 @@ code{
         padding: 40px;
     }
     .container.content{
-        margin-top: 90px;
+        margin-top: 89px;
     }
     #Intro{
         height: 85vh;
@@ -1016,7 +1022,7 @@ code{
         background-color: #00060F;
     }
     .container.content{
-        margin-top: 90px;
+        margin-top: 89px;
     }
     .image-movie{
         height: 265px;
@@ -1040,7 +1046,43 @@ code{
 }
   /* Extra small devices (phones, 321px and down) */
   @media only screen and (max-width: 321px) {
-    
+    .image-movie.one {
+        background-position: -48px -18px;
+    }
+    .image-movie.two {
+        background-position-y: -41px;
+        background-position-x: -23px;
+    }
+    .image-movie.three {
+        background-position-x: -70px;
+    }
+    .image-movie.four {
+        background-position-y: 0px;
+        background-position-x: -15px;
+    }
+    .trailer-image.four{
+        background-position-y: -9px;
+    }
+    .image-movie.five {
+        background-position-x: -40px;
+        background-position-y: -13px;
+    }
+    .trailer-image.five{
+        background-position-y: -2px;
+    }
+    .trailer-image.six{
+        background-position-y: -13px;
+        background-position-x: -20px;
+    }
+    .image-movie.seven {
+        background-position-x: -81px;
+    }
+    .image-movie.eight {
+        background-position-x: -71px;
+    }
+    .trailer-image.eight{
+        background-position-y: -4px;
+    }
 }
   
 
