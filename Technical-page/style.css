@@ -7,9 +7,13 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden !important;
+    min-height: -webkit-fill-available;
 }
 body{
     font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 li{
     list-style: none;
@@ -1005,7 +1009,7 @@ code{
   /* Extra small devices (phones, 376px and down) */
 @media only screen and (max-width: 376px) {
     html{
-        scroll-padding-top: 92px;
+        scroll-padding-top: 91px;
     }
     .image-movie{
         height: 265px;
