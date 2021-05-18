@@ -144,7 +144,7 @@ code{
 .text-container .logo-main{
     display: flex;
     justify-content: center;
-    width: 65%;
+    width: 45%;
     padding: 0px 60px;
 }
 .Intro-tittle h3{
@@ -526,14 +526,14 @@ code{
         width: 50px;
     }
     .Intro-tittle{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .text-container{
         padding-bottom: 0px;
     }
     .text-container .text-intro{
         width: 90%;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .text-container .top-autor{
         width: 90%;
@@ -572,6 +572,7 @@ code{
         width: 100%;
     }
     .resumen-text{
+        font-size: 0.7rem;
         padding: 0px 60px;
     }
     .image-movie{
@@ -750,7 +751,7 @@ code{
         justify-content: flex-end;
     }
     .text-container .logo-main{
-        width: 80%;
+        width: 50%;
     }
     .text-container .text-intro{
         font-size: 0.7rem;
@@ -798,7 +799,7 @@ code{
         padding-top: 30%;
     }
     .Intro-tittle{
-        top: 48%;
+        top: 45%;
     }
     .social-container{
         top: 20%;
@@ -810,7 +811,7 @@ code{
         display: none;
     }
     .text-container .logo-main{
-        width: 100%;
+        width: 70%;
         padding: 20px 60px;
     }
     .text-container .text-intro{
@@ -898,6 +899,9 @@ code{
 
 /* Extra small devices (phones, 426px and down) */
 @media only screen and (max-width: 426px) {
+    html{
+        scroll-padding-top: 92px;
+    }
     .logo{
         height: 55px;
     }
@@ -911,7 +915,7 @@ code{
         padding: 40px;
     }
     .container.content{
-        margin-top: 93px;
+        margin-top: 92px;
     }
     #Intro{
         height: 85vh;
@@ -970,6 +974,9 @@ code{
         width: 60%;
         bottom: -30px;
     }
+    .image-movie.one{
+        background-position-x: -20px;
+    }
     .image-movie.two{
         background-position-y: -45px;
     }
@@ -995,6 +1002,31 @@ code{
         background-position-x: -31px;
     }
   }
+  /* Extra small devices (phones, 376px and down) */
+@media only screen and (max-width: 376px) {
+    html{
+        scroll-padding-top: 92px;
+    }
+    .image-movie{
+        height: 265px;
+    }
+    .image-movie.one{
+        background-position-x: -44px;
+        background-position-y: -4px;
+    }
+    .image-movie.three{
+        background-position-x: -45px;
+    }
+    .image-movie.five{
+        background-position-x: -15px;
+    }
+    .image-movie.seven{
+        background-position-x: -35px;
+    }
+    .image-movie.eight{
+        background-position-x: -50px;
+    }
+}
   
 
  
