@@ -947,6 +947,7 @@ code{
     .text-container{
         flex-direction: column;
         padding-top: 0%;
+        padding-bottom: 5vh;
         justify-content: flex-end;
     }
     .text-container .logo-main{
@@ -997,8 +998,14 @@ code{
     .image-movie.four{
         background-position-y: 0px;
     }
+    .trailer-image.four{
+        background-position-y: -13px;
+    }
     .image-movie.five{
         background-position-y: -15px;
+    }
+    .trailer-image.five{
+        background-position-y: -7px;
     }
     .image-movie.six{
         background-position-y: -15px;
@@ -1007,9 +1014,15 @@ code{
         background-position-y: -5px;
         background-position-x: -20px;
     }
+    .trailer-image.seven{
+        background-position-y: -40px;
+    }
     .image-movie.eight{
         background-position-y: -21px;
         background-position-x: -31px;
+    }
+    .trailer-image.eight{
+        background-position-y: -15px;
     }
     .autor-name{
         font-size: 0.7rem;
