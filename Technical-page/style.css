@@ -840,8 +840,76 @@ code{
         background-position-y: -22px;
     }
 }
+/* Small devices (phones, 768px and up) */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .container.nav{
+        height: auto;
+    }
+    #navbar{
+        padding: 40px;
+        overflow: scroll;
+    }
+    #navbar.active{
+        top: 100%;
+        padding: 40px;
+        overflow: scroll;
+    }
+    .menu .movies{
+        padding: 0px 0px 10px;
+    }
+    .logo{
+        height: 45px;
+    }
+    .logo a{
+        width: 25%;
+    }
+    #toggle p{
+        font-size: 0.7rem;
+        padding: 7px 40px;
+    }
+    .container.content{
+        margin-top: 72px;
+    }
+    .Intro-tittle{
+        display: none;
+    }
+    .text-container .logo-main{
+        width: 55%;
+    }
+    .text-container .text-intro{
+        width: 90%;
+    }
+    .text-container .top-autor{
+        width: 90%;
+    }
+    .image-movie{
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .trailer-image{
+        bottom: -7px;
+    }
+    .image-movie.one{
+        background-position-y: -65px;
+    }
+    .image-movie.two{
+        background-position-y: -120px;
+    }
+    .trailer-image.four{
+        background-position-y: -10px;
+    }
+    .trailer-image.five{
+        background-position-y: -4px;
+    }
+    .trailer-image.six{
+        background-position-y: -16px;
+    }
+    .trailer-image.eight{
+        background-position-y: -11px;
+    }
+}
 
-  /* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (max-width: 600px) {
     html{
         scroll-padding-top: 123px;
@@ -1028,6 +1096,7 @@ code{
         font-size: 0.7rem;
     }
   }
+
   /* Extra small devices (phones, 376px and down) */
 @media only screen and (max-width: 376px) {
     html{
