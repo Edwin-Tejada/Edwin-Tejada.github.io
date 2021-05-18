@@ -215,7 +215,7 @@ code{
 .overlay-one{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 101%;
     background: rgb(1,0,69);
     background: linear-gradient(180deg, rgba(1,0,69,0) 0%, rgba(0,6,15,1) 100%);
 }
@@ -296,7 +296,7 @@ code{
 .overlay-two{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 101%;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 }
@@ -504,13 +504,19 @@ code{
 
 
 /*/////////////MEDIA SCREEN/////////////*/
+/*/////////////Desktop/////////////*/
+
  /* Large devices (laptops/desktops, 1024px and up) */
  @media only screen and (max-width: 1024px) {
+    .logo{
+        height: 220px;
+    }
     .logo a .logo-1-w{
         width: 75%;
     }
     .menu .movies{
         padding: 0px 40px 15px;
+        font-size: 0.7rem;
     }
     .logo-2{
         margin-top: 25%;
@@ -525,11 +531,11 @@ code{
         padding-bottom: 0px;
     }
     .text-container .text-intro{
-        width: 80%;
+        width: 90%;
         font-size: 0.8rem;
     }
     .text-container .top-autor{
-        width: 80%;
+        width: 90%;
         font-size: 0.7rem;
     }
     .Movie-number p{
@@ -543,6 +549,7 @@ code{
     }
     .image-movie{
         height: 250px;
+        margin-bottom: 25px;
     }
     .trailer-image{
         height: 80px;
@@ -565,6 +572,12 @@ code{
     }
     .resumen-text{
         padding: 0px 60px;
+    }
+    .image-movie{
+        background-position-y: -73px;
+    }
+    .image-movie.two{
+        background-position-y: -145px;
     }
 }
  /* Large devices (laptops/desktops, 992px and up) */
@@ -657,16 +670,24 @@ code{
     .image-movie.two{
         background-position-y: -135px;
     }
-} 
- /* Medium devices (landscape tablets, 768px and up) */
+}
+
+/*/////////////MEDIA SCREEN/////////////*/
+/*/////////////Tablets/////////////*/
+
+ /* Medium devices (landscape tablets, 768px) */
  @media only screen and (max-width: 768px) {
      html{
-         scroll-padding-top: 112px;
+         scroll-padding-top: 95px;
+     }
+     h1, h2, h3, h4, h5, h6, p{
+        margin-bottom: 5px;
      }
     .container.nav{
         width: 100%;
         height: 55px;
         z-index: 1200;
+        overflow: initial;
     }
     .container.nav row{
         width: 100%;
@@ -675,19 +696,19 @@ code{
         position: relative;
         background-color: #000816;
         justify-content: center;
-        height: 75px;
+        height: 60px;
         z-index: 1500;
     }
     .logo a{
-        width: 35%;
+        width: 30%;
         z-index: 1500;
     }
     #toggle p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .container.content{
         width: 100%;
-        margin-top: 112px;
+        margin-top: 95px;
     }
     /*////////Mobile Menu////////*/
     #toggle{
@@ -718,24 +739,21 @@ code{
         margin-top: 0;
     }
     /*End Mobile Menu*/
-    .h-bg-ipad{
-        display: flex;
-    }
-    .h-bg{
-        display: none;
-    }
     .social-container{
-        top: 20%;
+        top: 35%;
+    }
+    .Intro-tittle{
+        padding: 10px 40px;
     }
     .text-container{
-        justify-content: center;
+        justify-content: flex-end;
     }
     .text-container .logo-main{
-        width: 100%;
+        width: 80%;
     }
     .text-container .text-intro{
-        font-size: 1rem;
-        padding: 30px 40px;
+        font-size: 0.7rem;
+        padding: 10px 40px;
         width: 80%;
     }
     .text-container .top-autor{
@@ -745,22 +763,105 @@ code{
     .Movie-number p{
         padding: 20px 40px;
     }
+    .image-movie{
+        margin-bottom: 30px;
+    }
     .calification-container{
         padding: 0px 40px;
     }
 } 
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) and (orientation: portrait){
+    html{
+        scroll-padding-top: 123px;
+    }
+    .container.nav{
+        height: auto;
+    }
+    .logo{
+        height: 85px;
+    }
+    .logo a{
+        width: 37%;
+    }
+    #toggle p{
+        font-size: 1rem;
+    }
+    .container.content{
+        margin-top: 123px;
+    }
+    .text-container{
+        justify-content: center;
+        padding-top: 30%;
+    }
     .Intro-tittle{
-        padding: 10px 40px;
+        top: 48%;
+    }
+    .social-container{
+        top: 20%;
+    }
+    .h-bg-ipad{
+        display: flex;
+    }
+    .h-bg{
+        display: none;
+    }
+    .text-container .logo-main{
+        width: 100%;
+        padding: 20px 60px;
     }
     .text-container .text-intro{
-        width: 70%;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
+    }
+    .resumen-text{
+        font-size: 0.8rem;
+    }
+    .image-movie{
+        height: 280px;
+    }
+    .image-movie.two{
+        background-position-y: -120px;
+    }
+    .image-movie.three{
+        background-position-y: -22px;
+    }
+}
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 600px) {
+    html{
+        scroll-padding-top: 123px;
+    }
+    .logo{
+        height: 75px;
+    }
+    .logo a{
+        width: 40%;
+    }
+    #toggle p{
+        font-size: 0.9rem;
+    }
+    #navbar.active{
+        top: 100%;
+    }
+    .menu .movies{
+        font-size: 0.8rem;
+    }
+    .container.content{
+        margin-top: 112px;
+    }
+    .Intro-tittle{
+        padding: 10px 30px;
+    }
+    .text-container{
+        padding-top: 35%;
+    }
+    .text-container .text-intro{
+        width: 80%;
+        font-size: 0.8rem;
     }
     .text-container .top-autor{
-        width: 30%;
-        font-size: 0.6rem;
+        width: 80%;
+        font-size: 0.7rem;
     }
     .Movie-number p{
         font-size: 1.2rem;
@@ -775,18 +876,21 @@ code{
         font-size: 0.8rem;
     }
     .minutes p{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .text-box{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .resumen-text{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .image-movie.two{
         background-position-y: -100px;
     }
 }
+
+/*/////////////MEDIA SCREEN/////////////*/
+/*/////////////Mobile/////////////*/
 
 /* Extra small devices (phones, 426px and down) */
 @media only screen and (max-width: 426px) {
