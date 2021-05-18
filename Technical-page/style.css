@@ -847,7 +847,7 @@ code{
         width: 40%;
     }
     #toggle p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     #navbar.active{
         top: 100%;
@@ -1005,11 +1005,15 @@ code{
         background-position-y: -21px;
         background-position-x: -31px;
     }
+    .autor-name{
+        font-size: 0.7rem;
+    }
   }
   /* Extra small devices (phones, 376px and down) */
 @media only screen and (max-width: 376px) {
     html{
         scroll-padding-top: 91px;
+        background-color: #00060F;
     }
     .container.content{
         margin-top: 90px;
@@ -1033,6 +1037,10 @@ code{
     .image-movie.eight{
         background-position-x: -50px;
     }
+}
+  /* Extra small devices (phones, 321px and down) */
+  @media only screen and (max-width: 321px) {
+    
 }
   
 
