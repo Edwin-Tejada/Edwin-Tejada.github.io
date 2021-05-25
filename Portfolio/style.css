@@ -327,6 +327,9 @@ h1,h2,h3,h4,h5,h6, figure{
     .h-white, .h-outline{
         font-size: 4.5rem;
     }
+    .main-text-box{
+        margin-bottom: 10vh;
+    }
     .main-text-box .h-two{
         margin-left: 46px;
     }
